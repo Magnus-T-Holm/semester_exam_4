@@ -1,0 +1,6 @@
+{
+  "username": "username",
+  "password": "password",
+  "shared_secret": "shared_secret",
+  "identity_secret": "identity_secret"
+}

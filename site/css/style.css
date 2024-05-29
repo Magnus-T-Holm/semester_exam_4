@@ -1,0 +1,665 @@
+/* -------------------------------------------- General -------------------------------------------- */
+:root {
+  --white: #DDDDDD;
+  --white-75: #ffffffbf;
+  --white-62: #ffffff9e;
+  --white-40: #ffffff66;
+  --light-grey: #606060;
+  --light-grey-25: #a6a6a640;
+  --grey: #212121;
+  --dark-grey: #121212;
+  --orange: #FFA800;
+  --red: #E73D3D;
+  --green: #1FBF05;
+  --blue: #2DB0E5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+label {
+  color: var(--white);
+}
+
+body {
+  background-color: var(--grey);
+}
+
+main {
+  min-height: 660px;
+}
+
+/* -------------------------------------------- Header / Footer -------------------------------------------- */
+header,
+footer {
+  background-color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------------- Header ---------------------- */
+header {
+  justify-content: flex-end;
+  height: 138px;
+  padding: 0 16px 0 52px;
+}
+
+#logo_full_version {
+  width: 319px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  column-gap: 101px;
+}
+
+header nav {
+  display: flex;
+  column-gap: 70px;
+}
+
+header>a {
+  position: absolute;
+  left: 52px;
+  top: 28px;
+}
+
+header div nav a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------------- Footer ---------------------- */
+
+footer {
+  height: 202px;
+  justify-content: space-between;
+  padding-right: 88px;
+}
+
+#logo_small_version {
+  width: 166px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#social_media div {
+  display: flex;
+  column-gap: 20px;
+}
+
+#social_media p {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#social_media div a {
+  background-color: var(--blue);
+  color: black;
+  border-radius: 60%;
+  font-size: 29px;
+}
+
+#instagram {
+  padding: 4px 7.82px;
+}
+
+#facebook,
+#twitter {
+  padding: 4px 6px;
+}
+
+/* -------------------------------------------- Index / Frontpage -------------------------------------------- */
+/* ---------------------- Top banner ---------------------- */
+#top_banner {
+  display: flex;
+  height: 406px;
+  background-image: url("../img/How\ Highlight2.png");
+  background-position: right center;
+  background-size: 2900px;
+  background-repeat: no-repeat;
+}
+
+#top_banner div {
+  margin: auto 0 auto 90px;
+}
+
+#top_banner div p {
+  font-size: 40px;
+  margin: 85px 0;
+}
+
+/* ---------------------- Other sections general ---------------------- */
+
+#new_deals_section,
+#partner_program_section,
+#trading_forum_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+#new_deals_section h2,
+#partner_program_section h2,
+#trading_forum_section h2 {
+  margin-bottom: 38px;
+  text-align: center;
+  font-size: 66px;
+  font-style: italic;
+  font-family: fantasy;
+  text-transform: uppercase;
+}
+
+/* ---------------------- New deals / Trading forum general ---------------------- */
+#new_deals_container,
+#trading_forum_items_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: auto;
+  gap: 12.5px 24px;
+}
+
+/* ---------------------- Partner Program ---------------------- */
+#partner_program_section {
+  background-color: var(--dark-grey);
+  height: 388px;
+}
+
+#partner_program_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 152px;
+}
+
+#partner_program_container div p {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.fa-handshake-simple {
+  font-size: 160px;
+  color: var(--white);
+}
+
+/* ---------------------- Trading forum ---------------------- */
+section#trading_forum_section {
+  padding: 50px 0 88px 0;
+}
+
+#trading_forum_items_container {
+  margin: 23px 0 30px;
+}
+
+#trading_forum_section>div:not([id]) {
+  max-width: 770px;
+  padding-left: 14px;
+}
+
+#trading_forum_section>div>p {
+  font-size: 25px;
+}
+
+/* -------------------------------------------- Buy, Sell & Inventory -------------------------------------------- */
+
+#buy,
+#steam_inventory,
+#skinsmart_inventory {
+  display: flex;
+  justify-content: center;
+}
+
+#buy section,
+#steam_inventory section,
+#skinsmart_inventory section {
+  width: 100%;
+}
+
+#buy h1,
+#steam_inventory h1,
+#skinsmart_inventory h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+aside {
+  min-width: 257px;
+  padding-left: 25px;
+  border: black solid 2px;
+  border-left: none;
+  background-color: var(--dark-grey);
+}
+
+aside p {
+  font-size: 20px;
+  margin: 35px 0 19px;
+}
+
+#price {
+  margin-bottom: 32px;
+}
+
+#price>div {
+  display: flex;
+  column-gap: 23px;
+}
+
+#price>div>div {
+  display: flex;
+  flex-direction: column;
+}
+
+aside>div[id] input,
+aside>div[id]:not(#condition, #extra) label {
+  margin-left: 19px;
+}
+
+#pattern input,
+#fade input,
+#price input,
+#search input,
+#sticker input {
+  background-color: var(--dark-grey);
+  border: #606060 1px solid;
+  color: var(--white-75);
+  height: 30px;
+}
+
+#price input {
+  width: 75px;
+}
+
+#search input {
+  width: 173px;
+}
+
+#pattern input,
+#fade input,
+#sticker input {
+  width: 141px;
+}
+
+aside input[type="checkbox"] {
+  width: 19px;
+  height: 19px;
+}
+
+#condition div,
+#extra div {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+#condition div:not(:last-of-type),
+#extra div:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
+form section {
+  width: calc(100vw - 284px);
+}
+
+#top_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  border-bottom: 2px solid var(--dark-grey);
+  padding: 0 140.5px 0 44px;
+}
+
+#top_bar p {
+  color: var(--white-40);
+}
+
+#top_bar label {
+  color: var(--white-62);
+}
+
+#top_bar select {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+#top_bar option {
+  background-color: var(--grey);
+  border: none;
+}
+
+#items_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  padding: 29px 0 10px 44px;
+  gap: 37px 40px;
+}
+
+#items_container label.checked {
+  outline: var(--white-40) 3px solid;
+}
+
+.item_container {
+  width: 189px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item_image_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/item_background.png");
+  height: 164px;
+}
+
+.checkbox_container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 9px 0 0 5px;
+}
+
+.item_image_container>img {
+  width: 140px;
+}
+
+.sticker_container {
+  display: flex;
+  justify-content: end;
+  column-gap: 7px;
+  width: calc(100% - 9px);
+  padding: 0 9px 7px 0;
+}
+
+.sticker_container>img {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-grey-25);
+}
+
+.item_container_info_box {
+  background-color: black;
+  height: 60px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_container_info_box p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.item_price {
+  align-self: flex-end;
+  color: var(--orange);
+}
+
+#add_to_inventory {
+  padding: 10px 5px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 500px;
+}
+
+.stickers {
+  width: 64px;
+  height: 48px;
+}
+
+#steam_inventory>h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+/* -------------------------------------------- Item page -------------------------------------------- */
+main#item section {
+  display: flex;
+  justify-content: center;
+}
+
+#item_update_page_container,
+#item_page_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 940px;
+  max-width: 940px;
+  height: 752px;
+  max-height: 752px;
+  margin: 20px 0;
+  padding: 64px 41px 25px 64px;
+  background-color: var(--dark-grey);
+}
+
+#image_and_data,
+#similar_and_cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+#similar_and_cart {
+  height: 221px;
+}
+
+#image {
+  width: 415px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/item_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image>img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+#data {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+#cart_button_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#update_item,
+#add_to_cart {
+  padding: 10px 30px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+#update_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+#update_price>div>div {
+  display: flex;
+  flex-direction: column;
+}
+
+#update_price #update_price_input {
+  width: 259px;
+  height: 22px;
+  padding: 8px 10px;
+  font-size: 20px;
+  color: var(--white);
+  background-color: transparent;
+}
+
+#update_price #update_price_input::-webkit-outer-spin-button,
+#update_price #update_price_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* -------------------------------------------- Cart -------------------------------------------- */
+#shopping_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 660px;
+}
+
+#cart_full {
+  color: var(--red);
+}
+
+#shopping_cart>form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 940px;
+  margin: 20px 0;
+  padding: 64px 41px 25px 64px;
+  background-color: var(--dark-grey);
+}
+
+.cart_item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart_item i {
+  color: var(--red);
+}
+
+.price_container {
+  display: flex;
+  font-size: 20px;
+}
+
+.price_container p {
+  max-width: 100px;
+  font-size: 20px;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+}
+
+#buy_button {
+  padding: 10px 30px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+/* -------------------------------------------- Error page -------------------------------------------- */
+#error_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 660px;
+}
+
+#error_page h1,
+#error_page h2 {
+  width: 50%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+/* -------------------------------------------- Profile -------------------------------------------- */
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#profile>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 940px;
+  margin: 20px 0;
+  padding: 64px 41px 25px 64px;
+  background-color: var(--dark-grey);
+}
+
+#update_balance #update_balance_input {
+  width: 259px;
+  height: 22px;
+  padding: 8px 10px;
+  font-size: 20px;
+  color: var(--white);
+  background-color: transparent;
+}
+
+#update_balance #update_balance_input::-webkit-outer-spin-button,
+#update_balance #update_balance_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1650px) {
+
+  #items_container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+  #items_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
